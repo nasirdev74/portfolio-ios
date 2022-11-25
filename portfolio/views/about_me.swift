@@ -26,35 +26,40 @@ struct AboutMeView: View {
           }
         }
         Spacer().frame(height: 30)
-
         Text("I'm a mobile application developer with 2+ years of experience. I have successfully built and published 6 commercial mobile applications. Including:")
          .font(AppFont.openSans16)
          .fontWeight(.regular)
          .foregroundColor(AppColor.color474F59)
+         .padding([.horizontal], 8)
+
         Group {
           Spacer().frame(height: 10)
           Text("#Revorium - fintech project for a startup company in Estonia.")
            .font(AppFont.openSans16)
            .fontWeight(.regular)
            .foregroundColor(AppColor.color474F59)
+           .padding([.horizontal], 8)
 
           Spacer().frame(height: 10)
           Text("#NOA - e-commerce app live in Dubai.")
            .font(AppFont.openSans16)
            .fontWeight(.regular)
            .foregroundColor(AppColor.color474F59)
+           .padding([.horizontal], 8)
 
           Spacer().frame(height: 10)
           Text("#3Arabi - social media app")
            .font(AppFont.openSans16)
            .fontWeight(.regular)
            .foregroundColor(AppColor.color474F59)
+           .padding([.horizontal], 8)
 
           Spacer().frame(height: 10)
           Text("#WHA - telemedicine service app.")
            .font(AppFont.openSans16)
            .fontWeight(.regular)
            .foregroundColor(AppColor.color474F59)
+           .padding([.horizontal], 8)
           Spacer().frame(height: 10)
         }
 
@@ -62,6 +67,7 @@ struct AboutMeView: View {
          .font(AppFont.openSans16)
          .fontWeight(.regular)
          .foregroundColor(AppColor.color474F59)
+         .padding([.horizontal], 8)
         Spacer()
       }
        .padding(13)
