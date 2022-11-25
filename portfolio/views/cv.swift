@@ -4,6 +4,7 @@ struct CVView: View {
   var body: some View {
     NavigationView {
       VStack {
+        Spacer().frame(height: 10)
         Image("pp")
          .resizable()
          .scaledToFill()
@@ -28,9 +29,60 @@ struct CVView: View {
          .font(AppFont.rubik20)
          .fontWeight(.regular)
          .foregroundColor(AppColor.color1B2027)
+        List {
+          NavigationLink(destination: AboutMeView()) {
+            Text("About Me")
+             .font(AppFont.rubik20)
+             .fontWeight(.medium)
+             .foregroundColor(AppColor.color1B2027)
+          }
+           .frame(height: 40)
+           .foregroundColor(.white)
 
-        NavigationLink(destination: AboutMeView()) {
-          Text("About Me")
+          NavigationLink(destination: SkillsView()) {
+            Text("Skills")
+             .font(AppFont.rubik20)
+             .fontWeight(.medium)
+             .foregroundColor(AppColor.color1B2027)
+          }
+           .frame(height: 40)
+           .foregroundColor(.white)
+
+          NavigationLink(destination: ExperiencesView()) {
+            Text("Experiences")
+             .font(AppFont.rubik20)
+             .fontWeight(.medium)
+             .foregroundColor(AppColor.color1B2027)
+          }
+           .frame(height: 40)
+           .foregroundColor(.white)
+
+          NavigationLink(destination: EducationsView()) {
+            Text("Educations")
+             .font(AppFont.rubik20)
+             .fontWeight(.medium)
+             .foregroundColor(AppColor.color1B2027)
+          }
+           .frame(height: 40)
+           .foregroundColor(.white)
+
+          NavigationLink(destination: AwardsView()) {
+            Text("Awards")
+             .font(AppFont.rubik20)
+             .fontWeight(.medium)
+             .foregroundColor(AppColor.color1B2027)
+          }
+           .frame(height: 40)
+           .foregroundColor(.white)
+
+          NavigationLink(destination: OthersView()) {
+            Text("Others")
+             .font(AppFont.rubik20)
+             .fontWeight(.medium)
+             .foregroundColor(AppColor.color1B2027)
+          }
+           .frame(height: 40)
+           .foregroundColor(.white)
         }
       }
     }
