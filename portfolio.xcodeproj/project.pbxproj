@@ -17,12 +17,14 @@
 		4E9A56C9A09DD1173580EC27 /* experiences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9A5B9DF3598A9F06A334EC /* experiences.swift */; };
 		4E9A5716D8229B828C133169 /* about_me.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9A5863B6BF97B2B684FB7A /* about_me.swift */; };
 		4E9A5865E4E4A5C90BFBB87E /* awards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9A5216CE423E82E5F18620 /* awards.swift */; };
+		4E9A587DC7F3E4C062A70519 /* ui_screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9A5681431AF946B0C3C3A8 /* ui_screen.swift */; };
 		4E9A5975F1B6D94D1C584002 /* portfolioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9A5CAE9445D8590BBAB253 /* portfolioUITestsLaunchTests.swift */; };
 		4E9A5A80FCEE416D9FBF36B3 /* others.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9A5CD0FB1434AD11A4798E /* others.swift */; };
 		4E9A5B2A1A49D05BBD114AD4 /* portfolioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9A501831A8F72D98840ED4 /* portfolioUITests.swift */; };
 		4E9A5B3D76BC335E48F10B2F /* app_color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9A55476388EB7BCBA3AE59 /* app_color.swift */; };
 		4E9A5D0D6EBD0BEBEC6364BD /* Rubik.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E9A556ED6F5B5C9C9A00D37 /* Rubik.ttf */; };
 		4E9A5D4A105CE26397C5D297 /* app_font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9A5FF866E7B1FC42136F9F /* app_font.swift */; };
+		4E9A5DD298E995A93597E9BB /* skill_badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9A5583FF8D1EC263B535FD /* skill_badge.swift */; };
 		4E9A5E9102BB963EC42E394F /* Actor.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E9A5D071E42CB1C405CA4D2 /* Actor.ttf */; };
 		4E9A5EB60B4A81ED8F85955B /* color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9A5EE1CDDAAC9DCF603ED2 /* color.swift */; };
 		4E9A5ECE997279159E276F8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9A54E031700B868C1031B0 /* ContentView.swift */; };
@@ -59,6 +61,8 @@
 		4E9A5544F6B91D5DE2678073 /* educations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = educations.swift; sourceTree = "<group>"; };
 		4E9A55476388EB7BCBA3AE59 /* app_color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = app_color.swift; sourceTree = "<group>"; };
 		4E9A556ED6F5B5C9C9A00D37 /* Rubik.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = Rubik.ttf; sourceTree = "<group>"; };
+		4E9A5583FF8D1EC263B535FD /* skill_badge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = skill_badge.swift; sourceTree = "<group>"; };
+		4E9A5681431AF946B0C3C3A8 /* ui_screen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ui_screen.swift; sourceTree = "<group>"; };
 		4E9A568800DB0F24D0429958 /* portfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = portfolioApp.swift; sourceTree = "<group>"; };
 		4E9A5863B6BF97B2B684FB7A /* about_me.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = about_me.swift; sourceTree = "<group>"; };
 		4E9A5B597075035E9A838AFC /* portfolioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = portfolioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +136,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4E9A574864A75D623A9BD7DF /* components */ = {
+			isa = PBXGroup;
+			children = (
+				4E9A5583FF8D1EC263B535FD /* skill_badge.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
 		4E9A58665D87637DEBE6E0D2 /* portfolio */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +155,7 @@
 				4E9A587E465B5630B3864A1E /* theme */,
 				4E9A58E5AAA915FA71FB7463 /* extensions */,
 				4E9A50319F190DB05A120E21 /* views */,
+				4E9A574864A75D623A9BD7DF /* components */,
 			);
 			path = portfolio;
 			sourceTree = "<group>";
@@ -161,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				4E9A5EE1CDDAAC9DCF603ED2 /* color.swift */,
+				4E9A5681431AF946B0C3C3A8 /* ui_screen.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -234,6 +248,8 @@
 			dependencies = (
 			);
 			name = portfolio;
+			packageProductDependencies = (
+			);
 			productName = portfolio;
 			productReference = 4E9A53FE02A6E21B58F6D8C0 /* portfolio.app */;
 			productType = "com.apple.product-type.application";
@@ -273,6 +289,8 @@
 				en,
 			);
 			mainGroup = 4E9A506B3D96F74349F6801F;
+			packageReferences = (
+			);
 			productRefGroup = 4E9A5471445C2B6E2CB99BCD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +357,8 @@
 				4E9A5140BCCFFED6C0D0CB57 /* educations.swift in Sources */,
 				4E9A5865E4E4A5C90BFBB87E /* awards.swift in Sources */,
 				4E9A5A80FCEE416D9FBF36B3 /* others.swift in Sources */,
+				4E9A587DC7F3E4C062A70519 /* ui_screen.swift in Sources */,
+				4E9A5DD298E995A93597E9BB /* skill_badge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,9 +460,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "\"-Xlinker -interposable\"";
-				OTHER_LIBTOOLFLAGS = (
-					"\"-Xlinker -interposable\"",
-				);
+				OTHER_LIBTOOLFLAGS = "\"-Xlinker -interposable\"";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -501,9 +519,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "\"-Xlinker -interposable\"";
-				OTHER_LIBTOOLFLAGS = (
-					"\"-Xlinker -interposable\"",
-				);
+				OTHER_LIBTOOLFLAGS = "\"-Xlinker -interposable\"";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -557,8 +573,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
-				OTHER_LIBTOOLFLAGS = (
-				);
+				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = io.jupiter.portfolio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -600,8 +615,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
-				OTHER_LIBTOOLFLAGS = (
-				);
+				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = io.jupiter.portfolio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
