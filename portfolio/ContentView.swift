@@ -3,12 +3,14 @@ import SwiftUI
 struct ContentView: View {
   var body: some View {
     VStack {
-      Image(systemName: "globe")
-       .imageScale(.large)
-       .foregroundColor(.accentColor)
-      Text("Hello, world" )
+      CVView()
+//      AboutMeView()
+//      SkillsView()
+//      ExperiencesView()
+//      EducationsView()
+//      AwardsView()
+//      OthersView()
     }
-     .padding()
   }
 }
 
@@ -20,8 +22,7 @@ class ContentView_Previews: PreviewProvider {
   #if DEBUG
   @objc class func injected() {
     let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
-    windowScene?.windows.first?.rootViewController =
-      UIHostingController(rootView: ContentView())
+    windowScene?.windows.first?.rootViewController = UIHostingController(rootView: ContentView())
   }
   #endif
 }
