@@ -36,6 +36,7 @@
 		BD56CCC62931DD38006457DF /* education.component.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD56CCC52931DD38006457DF /* education.component.swift */; };
 		BD56CCC82931E3D0006457DF /* award.model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD56CCC72931E3D0006457DF /* award.model.swift */; };
 		BD56CCCA2931E8F2006457DF /* award.component.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD56CCC92931E8F2006457DF /* award.component.swift */; };
+		BD56CCCC293201B5006457DF /* social_media_links.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD56CCCB293201B5006457DF /* social_media_links.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		BD56CCC52931DD38006457DF /* education.component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = education.component.swift; sourceTree = "<group>"; };
 		BD56CCC72931E3D0006457DF /* award.model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = award.model.swift; sourceTree = "<group>"; };
 		BD56CCC92931E8F2006457DF /* award.component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = award.component.swift; sourceTree = "<group>"; };
+		BD56CCCB293201B5006457DF /* social_media_links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = social_media_links.swift; sourceTree = "<group>"; };
 		BDC9E10A2930F20E00D833B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,6 +170,7 @@
 				4E9A54FABDC99007B7984BB3 /* experience.component.swift */,
 				BD56CCC52931DD38006457DF /* education.component.swift */,
 				BD56CCC92931E8F2006457DF /* award.component.swift */,
+				BD56CCCB293201B5006457DF /* social_media_links.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				4E9A56AC117A6C09200B1A2F /* skills.swift in Sources */,
 				4E9A56C9A09DD1173580EC27 /* experiences.swift in Sources */,
 				4E9A5140BCCFFED6C0D0CB57 /* educations.swift in Sources */,
+				BD56CCCC293201B5006457DF /* social_media_links.swift in Sources */,
 				4E9A5865E4E4A5C90BFBB87E /* awards.swift in Sources */,
 				4E9A5A80FCEE416D9FBF36B3 /* others.swift in Sources */,
 				4E9A587DC7F3E4C062A70519 /* ui_screen.swift in Sources */,
