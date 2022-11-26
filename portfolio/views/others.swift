@@ -1,8 +1,19 @@
 import SwiftUI
 
 struct OthersView: View {
-  var body: some View {
-    Text("others")
+	@Environment(\.presentationMode) var mode: Binding<PresentationMode>
+	var body: some View {
+	  NavigationView {
+		  VStack(alignment: .leading) {
+			  Button(action: {
+				  mode.wrappedValue.dismiss()
+			  }){
+				  TextAppBar(title: "Others")
+			  }
+			  Spacer().frame(height: 30)
+			  Spacer().frame(width: UIScreen.screenWidth - 26)
+		  }.padding(13)
+	  }.navigationBarBackButtonHidden()
   }
 }
 

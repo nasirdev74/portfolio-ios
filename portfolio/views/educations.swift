@@ -16,15 +16,23 @@ let educations = [
 ]
 
 struct EducationsView: View {
+	@Environment(\.presentationMode) var mode: Binding<PresentationMode>
   var body: some View {
 	  NavigationView {
-		  VStack {
+		  VStack(alignment: .leading) {
+			  Button(action: {
+				  mode.wrappedValue.dismiss()
+			  }) {
+				  TextAppBar(title: "Educations")
+			  }
+			  Spacer().frame(height: 30)
 			  ForEach(educations, id: \.self) {education in
 				  VStack {
 					  EducationC(education: education)
 				  }
 			  }
-		  }
+			  Spacer().frame(width: UIScreen.screenWidth - 26)
+		  }.padding(13)
 	  }.navigationBarBackButtonHidden()
   }
 }

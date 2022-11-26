@@ -16,16 +16,24 @@ let awards = [
 ]
 
 struct AwardsView: View {
+	@Environment(\.presentationMode) var mode: Binding<PresentationMode>
   var body: some View {
 	  NavigationView {
-		  VStack {
+		  VStack(alignment: .leading) {
+			  Button(action: {
+				  mode.wrappedValue.dismiss()
+			  }){
+				  TextAppBar(title: "Awards")
+			  }
+			  Spacer().frame(height: 30)
 			  ForEach(awards, id: \.self) {award in
 				  VStack {
 					  AwardC(award: award)
 					  Spacer().frame(height: 10)
 				  }
 			  }
-		  }
+			  Spacer().frame(width: UIScreen.screenWidth - 26)
+		  }.padding(13)
 	  }.navigationBarBackButtonHidden()
   }
 }
