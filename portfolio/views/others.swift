@@ -11,7 +11,10 @@ struct OthersView: View {
 				  TextAppBar(title: "Others")
 			  }
 			  Spacer().frame(height: 30)
-			  SocialMediaLinks()
+			  SoftwaresC()
+			  Spacer().frame(height: 20)
+			  SocialMediaLinks().padding([.horizontal], 10)
+			  
 			  Spacer().frame(width: UIScreen.screenWidth - 26)
 		  }.padding(13)
 	  }.navigationBarBackButtonHidden()
