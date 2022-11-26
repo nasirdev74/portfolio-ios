@@ -26,13 +26,14 @@ struct AwardsView: View {
 				  TextAppBar(title: "Awards")
 			  }
 			  Spacer().frame(height: 30)
-			  ForEach(awards, id: \.self) {award in
-				  VStack {
-					  AwardC(award: award)
-					  Spacer().frame(height: 10)
-				  }
-			  }
-			  Spacer().frame(width: UIScreen.screenWidth - 26)
+			  Group {
+				  AwardC(award: awards[0])
+				  AppColor.color1B2027
+					  .frame(width: UIScreen.screenWidth - 36, height: 1)
+					  .padding([.vertical], 19)
+				  AwardC(award: awards[1])
+			  }.padding([.horizontal], 10)
+			  Spacer()
 		  }.padding(13)
 	  }.navigationBarBackButtonHidden()
   }
