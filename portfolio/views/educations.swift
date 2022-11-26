@@ -17,24 +17,26 @@ let educations = [
 
 struct EducationsView: View {
 	@Environment(\.presentationMode) var mode: Binding<PresentationMode>
-  var body: some View {
-	  NavigationView {
-		  VStack(alignment: .leading) {
-			  Button(action: {
+	var body: some View {
+		NavigationView {
+			VStack(alignment: .leading) {
+				Button(action: {
 				  mode.wrappedValue.dismiss()
 			  }) {
 				  TextAppBar(title: "Educations")
 			  }
-			  Spacer().frame(height: 30)
-			  ForEach(educations, id: \.self) {education in
-				  VStack {
-					  EducationC(education: education)
-				  }
-			  }
-			  Spacer().frame(width: UIScreen.screenWidth - 26)
-		  }.padding(13)
-	  }.navigationBarBackButtonHidden()
-  }
+				Spacer().frame(height: 30)
+				Group {
+					EducationC(education: educations[0])
+					AppColor.color1B2027
+						.frame(width: UIScreen.screenWidth - 36, height: 1)
+						.padding([.vertical], 19)
+					EducationC(education: educations[1])
+				}.padding([.horizontal], 10)
+				Spacer().frame(width: UIScreen.screenWidth - 26)
+			}.padding(13)
+		}.navigationBarBackButtonHidden()
+	}
 }
 
 class EducationsPreview: PreviewProvider {
