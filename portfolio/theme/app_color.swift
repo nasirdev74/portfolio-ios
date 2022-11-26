@@ -6,4 +6,5 @@ struct AppColor {
   static let color1B2027 = Color(0x1B2027)
   static let color474F59 = Color(0x474F59)
   static let colorF2F2F2 = Color(0xF2F2F2)
+  static let color8D939C = Color(0x8D939C)
 }
